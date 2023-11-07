@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation" id="navigation">
+      <ul class="list">
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="articles.html">Статті</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="page-nav.html">Навігація</a></li>
+        <li><a href="registration.html">Реєстрація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="container">
+      <h1>Реєстрація</h1>
+      <div class="form__register">
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+          <fieldset>
+            <legend>Test</legend>
+            <div class="form__register__label">
+              <label for="familyname">Прізвище</label>
+              <input type="text" name="familyname" id="familyname" placeholder="Прізвище">
+            </div>
+            <div class="form__register__label">
+              <label for="name">Ім'я</label>
+              <input type="text" name="name" id="name" placeholder="Ім'я">
+            </div>
+            <div class="form__register__label">
+              <label for="surname">По батькові</label>
+              <input type="text" name="surname" id="surname" placeholder="По батькові">
+            </div>
+            <div class="form__register__label">
+              <label for="photo">Фото профілю</label>
+              <input type="file" name="photo" id="photo">
+            </div>
+            <div class="form__register__label">
+              <label for="email">E-mail</label>
+              <input type="text" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="form__register__label">
+              <label for="password">Пароль</label>
+              <input type="password" name="password" id="password" placeholder="Пароль">
+            </div>
+            <div class="form__register__label">
+              <label for="website">Ваш сайт</label>
+              <input type="url" name="website" id="website" placeholder="https://mysite.name">
+            </div>
+            <div class="form__register__label">
+              <label for="date">Дата народження</label>
+              <input type="date" name="date" id="date">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Стать</legend>
+            <div>Виберіть вашу стать:</div>
+            <div>
+              <div class="form__register__label">
+                <input type="radio" name="gender" id="gender-male" value="male">
+                <label for="gender-male">Чоловік</label>
+              </div>
+              <div class="form__register__label">
+                <input type="radio" name="gender" id="gender-female" value="female">
+                <label for="gender-female">Жінка</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Кухня</legend>
+            <div class="form__register__label">
+              <input type="checkbox" id="ua" name="kitchen" value="ukraine">
+              <label for="ua">Українська</label>
+            </div>
+            <div class="form__register__label">
+              <input type="checkbox" id="fr" name="kitchen" value="france">
+              <label for="fr">Французька</label>
+            </div>
+            <div class="form__register__label">
+              <input type="checkbox" id="dk" name="kitchen" value="denmark">
+              <label for="dk">Датська</label>
+            </div>
+            <div class="form__register__label">
+              <input type="checkbox" id="it" name="kitchen" value="italy">
+              <label for="it">Італійська</label>
+            </div>
+            <div class="form__register__label">
+              <input type="checkbox" id="cn" name="kitchen" value="china">
+              <label for="cn">Китайська</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Info</legend>
+            <div class="form__register__label">
+              <label for="about">Інформація про себе:</label><br>
+              <textarea name="about" id="about" cols="21" rows="5" placeholder="Декілька слів про себе"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Buttons</legend>
+            <div class="form__register__label">
+              <button type="submit">Зареєструватися</button>
+              <button type="reset">Очистити форму</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; Максим Семенов
+    </div>
+  </footer>
+</body>
+
+</html>
