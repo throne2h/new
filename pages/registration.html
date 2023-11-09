@@ -10,37 +10,39 @@
 
 <body>
   <header class="header">
-    <nav class="navigation" id="navigation">
-      <ul class="list">
-        <li><a href="../index.html">Головна</a></li>
-        <li><a href="articles.html">Статті</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="contacts.html">Контакти</a></li>
-        <li><a href="gallery.html">Галерея</a></li>
-        <li><a href="page-nav.html">Навігація</a></li>
-        <li><a href="registration.html">Реєстрація</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navigation" id="navigation">
+        <ul class="list">
+          <li class="list__item"><a href="../index.html" class="list__link">Головна</a></li>
+          <li class="list__item"><a href="articles.html" class="list__link">Статті</a></li>
+          <li class="list__item"><a href="catalog.html" class="list__link">Каталог</a></li>
+          <li class="list__item"><a href="contacts.html" class="list__link">Контакти</a></li>
+          <li class="list__item"><a href="gallery.html" class="list__link">Галерея</a></li>
+          <li class="list__item"><a href="page-nav.html" class="list__link">Навігація</a></li>
+          <li class="list__item"><a href="registration.html" class="list__link">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="content">
     <div class="container">
-      <h1>Реєстрація</h1>
       <div class="form__register">
+        <h1>Реєстрація</h1>
         <form action="https://tests.fomenko.top/echo/index.php" method="GET">
           <fieldset>
-            <legend>Test</legend>
+            <legend>Основна Інформація</legend>
             <div class="form__register__label">
               <label for="familyname">Прізвище</label>
-              <input type="text" name="familyname" id="familyname" placeholder="Прізвище">
+              <input type="text" name="familyname" class="firstletter" id="familyname" placeholder="Прізвище">
             </div>
             <div class="form__register__label">
               <label for="name">Ім'я</label>
-              <input type="text" name="name" id="name" placeholder="Ім'я">
+              <input type="text" name="name" class="firstletter" id="name" placeholder="Ім'я">
             </div>
             <div class="form__register__label">
               <label for="surname">По батькові</label>
-              <input type="text" name="surname" id="surname" placeholder="По батькові">
+              <input type="text" name="surname" class="firstletter" id="surname" placeholder="По батькові">
             </div>
             <div class="form__register__label">
               <label for="photo">Фото профілю</label>
@@ -101,16 +103,31 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend>Info</legend>
+            <legend>Рік</legend>
+            <div class="form__register__label">
+              <select name="Year" id="Yeaer">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020" disabled>2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023" selected>2023</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Інформація</legend>
             <div class="form__register__label">
               <label for="about">Інформація про себе:</label><br>
               <textarea name="about" id="about" cols="21" rows="5" placeholder="Декілька слів про себе"></textarea>
             </div>
           </fieldset>
           <fieldset>
-            <legend>Buttons</legend>
+            <legend>Кнопки</legend>
             <div class="form__register__label">
               <button type="submit">Зареєструватися</button>
+            </div>
+            <div class="form__register__label">
               <button type="reset">Очистити форму</button>
             </div>
           </fieldset>
@@ -118,8 +135,9 @@
       </div>
     </div>
   </main>
-  <footer>
-    <div>
+
+  <footer class="footer">
+    <div class="container">
       &copy; Максим Семенов
     </div>
   </footer>
