@@ -201,6 +201,13 @@ hr {
   border: 5px solid transparent;
 }
 
+.form__contact {
+  width: 100%;
+  max-width: 520px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
+
 .form__register {
   width: 100%;
   max-width: 520px;

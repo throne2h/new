@@ -36,14 +36,26 @@
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <hr>
-        <h3>Форма зворотнього зв'язку</h3>
-        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
-          <div><input type="text" name="name" id="name" placeholder="Ім'я"></div>
-          <div><input type="tel" name="phone" id="phone" placeholder="123-4567-8901"></div>
-          <div><input type="email" name="email" id="email" placeholder="Email"></div>
-          <div><input type="text" name="question" id="question" placeholder="Питання"></div>
-          <div><button type="submit">Відправити</button></div>
-        </form>
+        <div class="form__contact">
+          <h3>Форма зворотнього зв'язку</h3>
+          <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+            <div class="form__register__label">
+              <input type="text" name="name" class="firstletter" id="name" placeholder="Ім'я">
+            </div>
+            <div class="form__register__label">
+              <input type="tel" name="phone" id="phone" placeholder="123-4567-8901">
+            </div>
+            <div class="form__register__label">
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form__register__label">
+              <input type="text" name="question" id="question" placeholder="Питання">
+            </div>
+            <div class="form__register__label">
+              <button type="submit">Відправити</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <hr>
