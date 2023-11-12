@@ -19,16 +19,17 @@ body::before {
   position: fixed;
   background: url(../img/bg/bg_small.jpg) right top no-repeat, url(../img/bg/bg.jpg) left top repeat;
   background-color: white;
-  background-size: 300px, cover;
+  background-size: 50px, cover;
   width: 100%;
   height: 100vh;
 }
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  top: 0;
+  /* top: 0; */
   background: blanchedalmond;
+  display: inline-block;
 }
 
 .navigation {
@@ -45,11 +46,11 @@ body::before {
   gap: 15px;
 }
 
-.list__item {
+.list-item {
   text-align: center;
 }
 
-.list__link {
+.list-link {
   font-family: Arial, serif;
   border: 2px solid blue;
   font-size: 0.8rem;
@@ -61,7 +62,7 @@ body::before {
   padding: 0.5em 0.25em;
 }
 
-.list__link:hover {
+.list-link:hover {
   border-style: dotted;
   border-color: orange;
   color: blue;
@@ -70,61 +71,58 @@ body::before {
 
 .content {
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .container {
-  width: min(100% - 20px, 1280px);
+  width: min(100vw - 20px, 1280px);
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .footer {
-  position: fixed;
   width: 100%;
-  bottom: 0;
   text-align: center;
   background-color: blueviolet;
-  padding-top: 15px;
+  padding-top: 18px;
   padding-bottom: 15px;
 }
 
-.article__title {
+.article-title {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: red;
   border-style: none none dashed none;
 }
 
-.article__details {
+.article-details {
   background-color: yellow;
+  padding: 15px 0 15px 5px;
 }
 
-.read__more:hover {
+.read-more:hover {
   text-decoration: underline;
   color: green;
 }
 
-.read__more:hover {
+.read-more:hover {
   text-decoration: none;
   color: green;
 }
 
-.article__comments {
+.article-comments {
   color: gray;
 }
 
-.main__article {
+.main-article {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.main__article__title {
+.main-article-title {
   color: blue;
   text-align: center;
 }
 
-.main__article>p::first-letter {
+.main-article>p::first-letter {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 25px;
   font-weight: 600;
@@ -138,6 +136,10 @@ body::before {
 .catalog ul {
   list-style-image: url(../img/dots/dot.png);
   width: 300px;
+}
+
+.catalog-list-item {
+  padding: 7px 0 7px 7px;
 }
 
 .catalog ul>li {
@@ -185,30 +187,30 @@ hr {
   border-color: green;
 }
 
-.gallery__bg {
+.gallery-bg {
   background-image: url(../img/bg/bg_texture.jpg);
 }
 
-.gallery__image__block {
+.gallery-image-block {
   margin: 0;
 }
 
-.gallery__image {
+.gallery-image {
   border: 5px solid green;
 }
 
-.gallery__image:hover {
+.gallery-image:hover {
   border: 5px solid transparent;
 }
 
-.form__contact {
+.form-contact {
   width: 100%;
   max-width: 520px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8em;
 }
 
-.form__register {
+.form-register {
   width: 100%;
   max-width: 520px;
   margin: 0 auto;
@@ -216,10 +218,13 @@ hr {
   font-size: 0.8em;
 }
 
-.form__register__label {
-  margin: 0 auto;
+.form-register-label {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.form-register-label-checkbox {
+  margin: 5px 0 5px;
 }
 
 fieldset {
@@ -241,6 +246,10 @@ button {
   border-radius: 5px;
 }
 
+input[type="file"] {
+  padding: 0;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
@@ -248,9 +257,10 @@ input[type="radio"] {
 
 input[type=checkbox]+label,
 input[type=radio]+label {
-  margin: 0;
   display: inline-block;
+  margin: 0;
 }
+
 
 textarea {
   resize: vertical;

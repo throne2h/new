@@ -13,13 +13,13 @@
     <div class="container">
       <nav class="navigation" id="navigation">
         <ul class="list">
-          <li class="list__item"><a href="../index.html" class="list__link">Головна</a></li>
-          <li class="list__item"><a href="articles.html" class="list__link">Статті</a></li>
-          <li class="list__item"><a href="catalog.html" class="list__link">Каталог</a></li>
-          <li class="list__item"><a href="contacts.html" class="list__link">Контакти</a></li>
-          <li class="list__item"><a href="gallery.html" class="list__link">Галерея</a></li>
-          <li class="list__item"><a href="page-nav.html" class="list__link">Навігація</a></li>
-          <li class="list__item"><a href="registration.html" class="list__link">Реєстрація</a></li>
+          <li class="list-item"><a href="../index.html" class="list-link">Головна</a></li>
+          <li class="list-item"><a href="articles.html" class="list-link">Статті</a></li>
+          <li class="list-item"><a href="catalog.html" class="list-link">Каталог</a></li>
+          <li class="list-item"><a href="contacts.html" class="list-link">Контакти</a></li>
+          <li class="list-item"><a href="gallery.html" class="list-link">Галерея</a></li>
+          <li class="list-item"><a href="page-nav.html" class="list-link">Навігація</a></li>
+          <li class="list-item"><a href="registration.html" class="list-link">Реєстрація</a></li>
         </ul>
       </nav>
     </div>
@@ -27,84 +27,81 @@
 
   <main class="content">
     <div class="container">
-      <div class="form__register">
+      <div class="form-register">
         <h1>Реєстрація</h1>
         <form action="https://tests.fomenko.top/echo/index.php" method="GET">
           <fieldset>
             <legend>Основна Інформація</legend>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="familyname">Прізвище</label>
               <input type="text" name="familyname" class="firstletter" id="familyname" placeholder="Прізвище">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="name">Ім'я</label>
               <input type="text" name="name" class="firstletter" id="name" placeholder="Ім'я">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="surname">По батькові</label>
               <input type="text" name="surname" class="firstletter" id="surname" placeholder="По батькові">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="photo">Фото профілю</label>
               <input type="file" name="photo" id="photo">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="email">E-mail</label>
               <input type="text" name="email" id="email" placeholder="E-mail">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="password">Пароль</label>
               <input type="password" name="password" id="password" placeholder="Пароль">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="website">Ваш сайт</label>
               <input type="url" name="website" id="website" placeholder="https://mysite.name">
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="date">Дата народження</label>
               <input type="date" name="date" id="date">
             </div>
           </fieldset>
           <fieldset>
-            <legend>Стать</legend>
-            <div>Виберіть вашу стать:</div>
-            <div>
-              <div class="form__register__label">
-                <input type="radio" name="gender" id="gender-male" value="male">
-                <label for="gender-male">Чоловік</label>
-              </div>
-              <div class="form__register__label">
-                <input type="radio" name="gender" id="gender-female" value="female">
-                <label for="gender-female">Жінка</label>
-              </div>
+            <legend>Виберіть вашу стать:</legend>
+            <div class="form-register-label">
+              <input type="radio" name="gender" id="gender-male" value="male">
+              <label for="gender-male">Чоловік</label>
+            </div>
+            <div class="form-register-label">
+              <input type="radio" name="gender" id="gender-female" value="female">
+              <label for="gender-female">Жінка</label>
             </div>
           </fieldset>
           <fieldset>
             <legend>Кухня</legend>
-            <div class="form__register__label">
+            <div class="form-register-label-checkbox">
               <input type="checkbox" id="ua" name="kitchen" value="ukraine">
               <label for="ua">Українська</label>
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label-checkbox">
               <input type="checkbox" id="fr" name="kitchen" value="france">
               <label for="fr">Французька</label>
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label-checkbox">
               <input type="checkbox" id="dk" name="kitchen" value="denmark">
               <label for="dk">Датська</label>
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label-checkbox">
               <input type="checkbox" id="it" name="kitchen" value="italy">
               <label for="it">Італійська</label>
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label-checkbox">
               <input type="checkbox" id="cn" name="kitchen" value="china">
               <label for="cn">Китайська</label>
             </div>
           </fieldset>
           <fieldset>
             <legend>Рік</legend>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <select name="Year" id="Yeaer">
                 <option value="2018">2018</option>
                 <option value="2019">2019</option>
@@ -117,17 +114,17 @@
           </fieldset>
           <fieldset>
             <legend>Інформація</legend>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <label for="about">Інформація про себе:</label><br>
               <textarea name="about" id="about" cols="21" rows="5" placeholder="Декілька слів про себе"></textarea>
             </div>
           </fieldset>
           <fieldset>
             <legend>Кнопки</legend>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <button type="submit">Зареєструватися</button>
             </div>
-            <div class="form__register__label">
+            <div class="form-register-label">
               <button type="reset">Очистити форму</button>
             </div>
           </fieldset>
