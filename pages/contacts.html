@@ -38,28 +38,32 @@
         <hr>
         <div class="form-contact">
           <h3>Форма зворотнього зв'язку</h3>
-          <fieldset>
-            <legend>Вкажіть Інформацію</legend>
-            <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+          <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+            <fieldset>
+              <legend>Вкажіть Інформацію</legend>
               <div class="form-register-label">
-                <input type="text" name="name" class="firstletter" id="name" placeholder="Ім'я">
+                <label for="name">Ім'я</label>
+                <input type="text" name="name" id="name" class="firstletter" placeholder="Ім'я">
               </div>
               <div class="form-register-label">
+                <label for="phone">Телефон</label>
                 <input type="tel" name="phone" id="phone" placeholder="123-4567-8901">
               </div>
               <div class="form-register-label">
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email">
               </div>
               <div class="form-register-label">
+                <label for="question">Питання</label>
                 <input type="text" name="question" id="question" placeholder="Питання">
               </div>
-          </fieldset>
-          <fieldset>
-            <legend>Кнопка</legend>
-            <div class="form-register-label">
-              <button type="submit">Відправити</button>
-            </div>
-          </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>Кнопка</legend>
+              <div class="form-register-label">
+                <button type="submit">Відправити</button>
+              </div>
+            </fieldset>
           </form>
         </div>
       </div>
